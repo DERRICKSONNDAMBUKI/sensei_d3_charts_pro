@@ -68,7 +68,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# sensei_d3_reactJs
-# sensei_map_datavis
-# sensei_poinsts_on_world_map
+
 # sensei_d3_charts_pro

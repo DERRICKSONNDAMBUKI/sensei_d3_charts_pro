@@ -5,7 +5,7 @@ import { UnemployedData } from "../../components/charts/histogram/UnemployedData
 export const Unemployment = () => {
   const unemployed = UnemployedData();
 
-  if (!unemployed) return <pre>Please wait. Cities Loading...</pre>;
+  if (!unemployed) return <pre>Please wait. unemployment data loading...</pre>;
 
   return <HistogramComp unemployed={unemployed} />;
 };

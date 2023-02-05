@@ -7,7 +7,6 @@ import {
   max,
   axisBottom,
   axisLeft,
-  create,
   select,
 } from "d3";
 import { useEffect, useRef } from "react";
@@ -76,12 +75,14 @@ export const HistogramComp = ({ unemployed }) => {
     const yAxis = axisLeft(yScale).ticks(height / 40, yFormat);
     yFormat = yScale.tickFormat(100, yFormat);
 
+    
     const svg = select(ref.current)
       .attr("width", width)
       .attr("height", height)
       .attr("viewBox", [0, 0, width, height])
       .attr("style", "max-width: 100%; height: auto; height: intrinsic;");
 
+    const
     svg
       .append("g")
       .attr("transform", `translate(${marginLeft},0)`)
@@ -133,15 +134,15 @@ export const HistogramComp = ({ unemployed }) => {
           .text(xLabel)
       );
 
-    return svg.node();
+    // return svg.node();
   };
 
   useEffect(() => {
     Histogram(unemployed, {
       value: (d) => d.rate,
       label: "Unemployment rate (%) →",
-      width: 950,
-      height: 500,
+      width: 350,
+      height: 200,
       color: "steelblue",
     });
   }, [unemployed]);

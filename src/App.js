@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
 import "./App.css";
+import { AlphabetBar } from "./pages/alphabet/AlphabetBar";
 import { Home } from "./pages/home/Home";
 import { Unemployment } from "./pages/unemployment/Unemployment";
 import { WorldMap } from "./pages/worldMap/WorldMap";
@@ -9,8 +10,9 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} exact />
-        <Route path="worldmappoints" element={<WorldMap/>}/>
-        <Route path="unemployment" element={<Unemployment/>}/>
+        <Route path="/worldmappoints" element={<WorldMap/>}/>
+        <Route path="/unemployment" element={<Unemployment/>}/>
+        <Route path="/barchart" element={<AlphabetBar/>}/>
 
         {/* no route */}
         <Route

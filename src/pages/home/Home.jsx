@@ -12,6 +12,7 @@ export const Home = () => {
           </Link>
         </li>
         <li><Link to={"unemployment"}>Histogram with unemployment</Link></li>
+        <li><Link to={"barchart"}>Bar Chart</Link></li>
       </ul>
     </>
   );
